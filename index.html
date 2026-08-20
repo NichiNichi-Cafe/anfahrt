@@ -43,44 +43,6 @@
     line-height: 1.7;
   }
 
-  .parking-summary {
-    padding-block: 0 clamp(58px, 8vw, 96px);
-  }
-
-  .parking-summary__grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-  }
-
-  .parking-summary__card {
-    padding: 28px;
-    background: rgba(250,247,240,.78);
-    border: 1px solid var(--paper-warm);
-  }
-
-  .parking-summary__number {
-    margin: 0 0 10px;
-    color: var(--matcha);
-    font-size: 13px;
-    letter-spacing: .16em;
-  }
-
-  .parking-summary__card h2 {
-    margin: 0;
-    font-family: "Shippori Mincho", serif;
-    font-size: 27px;
-    font-weight: 500;
-    line-height: 1.35;
-  }
-
-  .parking-summary__card p {
-    margin: 14px 0 0;
-    color: #625950;
-    font-size: 16px;
-    line-height: 1.78;
-  }
-
   .parking-guide {
     padding-block: clamp(62px, 8vw, 100px);
     background: var(--cream);
@@ -145,16 +107,9 @@
   }
 
   @media (max-width: 760px) {
-    .parking-summary__grid {
-      grid-template-columns: 1fr;
-    }
 
     .parking-hero {
       padding-top: 52px;
-    }
-
-    .parking-summary__card {
-      padding: 23px 21px;
     }
 
     .parking-footer__inner {
@@ -215,69 +170,17 @@
     </div>
   </section>
 
-  <section class="parking-summary shell" id="parkplaetze">
-    <div class="parking-summary__grid">
-      <article class="parking-summary__card">
-        <p class="parking-summary__number">01</p>
-        <div data-lang="de">
-          <h2>P1 + P2</h2>
-          <p>Bitte platzsparend parken, damit zwei große oder drei normale Autos Platz finden.</p>
-        </div>
-        <div data-lang="en" hidden>
-          <h2>P1 + P2</h2>
-          <p>Please park space-efficiently so there is room for two large or three standard cars.</p>
-        </div>
-      </article>
+  
 
-      <article class="parking-summary__card">
-        <p class="parking-summary__number">02</p>
-        <div data-lang="de">
-          <h2>Straße freihalten</h2>
-          <p>Bitte vollständig auf den markierten Flächen parken und die Straße für den Verkehr frei lassen.</p>
-        </div>
-        <div data-lang="en" hidden>
-          <h2>Keep the road clear</h2>
-          <p>Please stay fully within the marked parking area and keep the road clear for traffic.</p>
-        </div>
-      </article>
-
-      <article class="parking-summary__card">
-        <p class="parking-summary__number">03</p>
-        <div data-lang="de">
-          <h2>Wenn alles belegt ist</h2>
-          <p>Dann bitte wie gewohnt an der Einfahrt zur Reinhardsau parken.</p>
-        </div>
-        <div data-lang="en" hidden>
-          <h2>If the spaces are full</h2>
-          <p>Please park as before near the entrance to Reinhardsau.</p>
-        </div>
-      </article>
-
-      <article class="parking-summary__card">
-        <p class="parking-summary__number">04</p>
-        <div data-lang="de">
-          <h2>Nur 30 Sekunden zu Fuß</h2>
-          <p>Vom neuen Parkplatz ist der Eingang zum NichiNichi Café gleich um die Ecke.</p>
-        </div>
-        <div data-lang="en" hidden>
-          <h2>Only a 30-second walk</h2>
-          <p>From the new parking area, the entrance to NichiNichi Café is just around the corner.</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="parking-guide">
+  <section class="parking-guide" id="parkplaetze">
     <div class="shell">
       <div class="parking-guide__heading" data-lang="de">
-        <p class="section-kicker">So findest du den Platz</p>
-        <h2>Die vier Bilder zeigen den Weg Schritt für Schritt.</h2>
-        <p>Die Reihenfolge entspricht der Anfahrt vor Ort: Parkplatz finden, Straße freihalten, Ausweichplatz erkennen und zum Café gehen.</p>
+        <p class="section-kicker">Parken</p>
+        <h2>So findest du den Platz.</h2>
       </div>
       <div class="parking-guide__heading" data-lang="en" hidden>
-        <p class="section-kicker">How to find the parking area</p>
-        <h2>These four images show the route step by step.</h2>
-        <p>They follow the real sequence on arrival: find the parking area, keep the road clear, identify the overflow option and walk to the café.</p>
+        <p class="section-kicker">Parking</p>
+        <h2>How to find the parking area.</h2>
       </div>
 
       <figure>
@@ -290,8 +193,6 @@
           src="../assets/images/parking-guide.webp"
           width="1080"
         />
-        <figcaption data-lang="de">P1/P2 → platzsparend parken → bei Belegung Reinhardsau → ca. 30 Sekunden zum Café.</figcaption>
-        <figcaption data-lang="en" hidden>P1/P2 → park efficiently → use Reinhardsau if full → about 30 seconds to the café.</figcaption>
       </figure>
     </div>
   </section>
