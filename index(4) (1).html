@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Anfahrt & Parken · NichiNichi Café</title>
+<meta content="Neue NichiNichi-Parkplätze in Olef: zwei große oder drei normale Autos, nur etwa 30 Sekunden zu Fuß vom Café." name="description"/>
+<meta content="#738163" name="theme-color"/>
+<link href="https://nichinichi-cafe.github.io/anfahrt/" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&amp;family=Libre+Baskerville:ital@0;1&amp;family=Shippori+Mincho:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/css/site.css?v=0.16" rel="stylesheet"/>
+<style>
+  .parking-page {
+    min-height: 100vh;
+  }
+
+  .parking-hero {
+    padding-block: clamp(64px, 8vw, 104px) clamp(42px, 6vw, 72px);
+  }
+
+  .parking-hero__inner {
+    max-width: 900px;
+  }
+
+  .parking-hero h1 {
+    margin: 0;
+    font-family: "Shippori Mincho", serif;
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: 500;
+    letter-spacing: -.035em;
+    line-height: 1.08;
+    text-wrap: balance;
+  }
+
+  .parking-hero__lead {
+    max-width: 760px;
+    margin: 24px 0 0;
+    color: #5f564e;
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: clamp(18px, 2.1vw, 24px);
+    line-height: 1.7;
+  }
+
+  .parking-summary {
+    padding-block: 0 clamp(58px, 8vw, 96px);
+  }
+
+  .parking-summary__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .parking-summary__card {
+    padding: 28px;
+    background: rgba(250,247,240,.78);
+    border: 1px solid var(--paper-warm);
+  }
+
+  .parking-summary__number {
+    margin: 0 0 10px;
+    color: var(--matcha);
+    font-size: 13px;
+    letter-spacing: .16em;
+  }
+
+  .parking-summary__card h2 {
+    margin: 0;
+    font-family: "Shippori Mincho", serif;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.35;
+  }
+
+  .parking-summary__card p {
+    margin: 14px 0 0;
+    color: #625950;
+    font-size: 16px;
+    line-height: 1.78;
+  }
+
+  .parking-guide {
+    padding-block: clamp(62px, 8vw, 100px);
+    background: var(--cream);
+    border-block: 1px solid var(--paper-warm);
+  }
+
+  .parking-guide__heading {
+    max-width: 760px;
+    margin-bottom: 34px;
+  }
+
+  .parking-guide__heading h2 {
+    margin: 0;
+    font-family: "Shippori Mincho", serif;
+    font-size: clamp(32px, 4.5vw, 52px);
+    font-weight: 500;
+    letter-spacing: -.03em;
+    line-height: 1.15;
+  }
+
+  .parking-guide__heading p {
+    margin: 18px 0 0;
+    color: #625950;
+    line-height: 1.8;
+  }
+
+  .parking-guide figure {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .parking-guide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--paper-warm);
+    box-shadow: var(--shadow);
+  }
+
+  .parking-guide figcaption {
+    margin-top: 15px;
+    color: var(--stone);
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .parking-footer {
+    padding-block: 54px 72px;
+  }
+
+  .parking-footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .parking-footer p {
+    margin: 0;
+    color: #625950;
+  }
+
+  @media (max-width: 760px) {
+    .parking-summary__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .parking-hero {
+      padding-top: 52px;
+    }
+
+    .parking-summary__card {
+      padding: 23px 21px;
+    }
+
+    .parking-footer__inner {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+</style>
+<script defer src="../assets/js/site-data.js?v=0.17"></script>
+<script defer src="../assets/js/site.js?v=0.17"></script>
+</head>
+<body class="parking-page">
+<a class="skip-link" href="#main">
+  <span data-lang="de">Zum Inhalt</span>
+  <span data-lang="en" hidden>Skip to content</span>
+</a>
+
+<header class="site-header">
+  <div class="site-header__inner shell">
+    <a aria-label="NichiNichi Startseite" class="brand" href="../">
+      <span aria-hidden="true" class="brand__kanji">日日珈琲</span>
+      <span class="brand__name">NichiNichi Café</span>
+    </a>
+
+    <nav aria-label="Hauptnavigation" class="site-nav" data-aria-label-de="Hauptnavigation" data-aria-label-en="Main navigation">
+      <a data-lang="de" href="../">Startseite</a>
+      <a data-lang="en" hidden href="../">Home</a>
+      <a data-lang="de" href="#parkplaetze">Parken</a>
+      <a data-lang="en" hidden href="#parkplaetze">Parking</a>
+    </nav>
+
+    <div aria-label="Sprache wählen" class="language-switch" data-aria-label-de="Sprache wählen" data-aria-label-en="Choose language">
+      <button aria-pressed="true" class="language-button is-active" data-language="de" type="button">DE</button>
+      <span aria-hidden="true">/</span>
+      <button aria-pressed="false" class="language-button" data-language="en" type="button">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="parking-hero shell">
+    <div class="parking-hero__inner" data-lang="de">
+      <p class="section-kicker">Anfahrt &amp; Parken</p>
+      <h1>Neue Parkplätze direkt beim NichiNichi.</h1>
+      <p class="parking-hero__lead">
+        Es gibt jetzt markierte NichiNichi-Parkplätze im Schatten – für zwei große oder drei normale Autos.
+        Vom Parkplatz sind es nur etwa 30 Sekunden zu Fuß bis zum Café.
+      </p>
+    </div>
+
+    <div class="parking-hero__inner" data-lang="en" hidden>
+      <p class="section-kicker">Directions &amp; Parking</p>
+      <h1>New parking spaces right by NichiNichi.</h1>
+      <p class="parking-hero__lead">
+        There are now marked NichiNichi parking spaces in the shade, with room for two large or three standard cars.
+        The café is only about a 30-second walk away.
+      </p>
+    </div>
+  </section>
+
+  <section class="parking-summary shell" id="parkplaetze">
+    <div class="parking-summary__grid">
+      <article class="parking-summary__card">
+        <p class="parking-summary__number">01</p>
+        <div data-lang="de">
+          <h2>P1 + P2</h2>
+          <p>Bitte platzsparend parken, damit zwei große oder drei normale Autos Platz finden.</p>
+        </div>
+        <div data-lang="en" hidden>
+          <h2>P1 + P2</h2>
+          <p>Please park space-efficiently so there is room for two large or three standard cars.</p>
+        </div>
+      </article>
+
+      <article class="parking-summary__card">
+        <p class="parking-summary__number">02</p>
+        <div data-lang="de">
+          <h2>Straße freihalten</h2>
+          <p>Bitte vollständig auf den markierten Flächen parken und die Straße für den Verkehr frei lassen.</p>
+        </div>
+        <div data-lang="en" hidden>
+          <h2>Keep the road clear</h2>
+          <p>Please stay fully within the marked parking area and keep the road clear for traffic.</p>
+        </div>
+      </article>
+
+      <article class="parking-summary__card">
+        <p class="parking-summary__number">03</p>
+        <div data-lang="de">
+          <h2>Wenn alles belegt ist</h2>
+          <p>Dann bitte wie gewohnt an der Einfahrt zur Reinhardsau parken.</p>
+        </div>
+        <div data-lang="en" hidden>
+          <h2>If the spaces are full</h2>
+          <p>Please park as before near the entrance to Reinhardsau.</p>
+        </div>
+      </article>
+
+      <article class="parking-summary__card">
+        <p class="parking-summary__number">04</p>
+        <div data-lang="de">
+          <h2>Nur 30 Sekunden zu Fuß</h2>
+          <p>Vom neuen Parkplatz ist der Eingang zum NichiNichi Café gleich um die Ecke.</p>
+        </div>
+        <div data-lang="en" hidden>
+          <h2>Only a 30-second walk</h2>
+          <p>From the new parking area, the entrance to NichiNichi Café is just around the corner.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="parking-guide">
+    <div class="shell">
+      <div class="parking-guide__heading" data-lang="de">
+        <p class="section-kicker">So findest du den Platz</p>
+        <h2>Die vier Bilder zeigen den Weg Schritt für Schritt.</h2>
+        <p>Die Reihenfolge entspricht der Anfahrt vor Ort: Parkplatz finden, Straße freihalten, Ausweichplatz erkennen und zum Café gehen.</p>
+      </div>
+      <div class="parking-guide__heading" data-lang="en" hidden>
+        <p class="section-kicker">How to find the parking area</p>
+        <h2>These four images show the route step by step.</h2>
+        <p>They follow the real sequence on arrival: find the parking area, keep the road clear, identify the overflow option and walk to the café.</p>
+      </div>
+
+      <figure>
+        <img
+          alt="Vier Schritte zu den NichiNichi-Parkplätzen und zum Café"
+          data-alt-de="Vier Schritte zu den NichiNichi-Parkplätzen und zum Café"
+          data-alt-en="Four steps showing the NichiNichi parking area and the short walk to the café"
+          height="4428"
+          loading="eager"
+          src="../assets/images/parking-guide.webp"
+          width="1080"
+        />
+        <figcaption data-lang="de">P1/P2 → platzsparend parken → bei Belegung Reinhardsau → ca. 30 Sekunden zum Café.</figcaption>
+        <figcaption data-lang="en" hidden>P1/P2 → park efficiently → use Reinhardsau if full → about 30 seconds to the café.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="parking-footer">
+    <div class="parking-footer__inner shell">
+      <p data-lang="de">Reinhardsau 4 · 53937 Schleiden · Olef</p>
+      <p data-lang="en" hidden>Reinhardsau 4 · 53937 Schleiden · Olef</p>
+      <a class="button button--solid" href="../">
+        <span data-lang="de">Zurück zum Café</span>
+        <span data-lang="en" hidden>Back to the café</span>
+      </a>
+    </div>
+  </section>
+</main>
+</body>
+</html>
